@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer's Signup</title>
+    <link rel="stylesheet" href="css_shipper/all.min.css"/>
+    <link rel="stylesheet" href="css_shipper/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css_shipper/css_shipper.css"/>
+</head>
+<body class="bg-light">
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-1 px-xl-5">
+            <!--left part-->
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center h-100">
+                    <a class="text-body mr-3" href="">About</a>
+                    <a class="text-body mr-3" href="">Contact</a>
+                    <a class="text-body mr-3" href="">Help</a>
+                    <a class="text-body mr-3" href="">FAQs</a>
+                </div>
+            </div>
+
+            <!--right part-->
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <!--Sign in & Sign up section-->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">My Account</button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a href="login.html"><button class="dropdown-item" type="button">Login</button></a>
+                            <button class="dropdown-item" type="button">Profile</button>
+                        </div>
+                    </div>
+                    <!--Currencies section-->
+                    <div class="btn-group mx-2">
+                        <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">USD</button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">EUR</button>
+                            <button class="dropdown-item" type="button">GBP</button>
+                            <button class="dropdown-item" type="button">CAD</button>
+                        </div>
+                    </div>
+                    <!--Languages section-->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">EN</button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">FR</button>
+                            <button class="dropdown-item" type="button">AR</button>
+                            <button class="dropdown-item" type="button">RU</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Wishlist & cart-->
+                <div class="d-inline-flex align-items-center d-block d-lg-none">
+                    <!--Wishlist-->
+                    <a href="" class="btn px-0 ml-2">
+                        <i class="fas fa-heart text-dark"></i>
+                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
+                    </a>
+                    <!--Cart-->
+                    <a href="" class="btn px-0 ml-2">
+                        <i class="fas fa-shopping-cart text-dark"></i>
+                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- middle bar section-->
+        <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+
+            <!--Logo section-->
+            <div class="col-lg-4">
+                <a href="" class="text-decoration-none">
+                    <span class="h1 text-uppercase text-primary bg-dark px-2">UNI</span>
+                    <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Store</span>
+                </a>
+            </div>
+
+            <!--search bar-->
+            <div class="col-lg-4 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!--Customer service phone number (can replace this for the user account placement)-->
+            <div class="col-lg-4 col-6 text-right">
+                <p class="m-0">Customer Service</p>
+                <h5 class="m-0">+012 345 6789</h5>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+       <!-- Navbar Start -->
+
+       <div class="container-fluid bg-dark mb-30">
+        <div class="row px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn d-flex align-items-center justify-content-between bg-primary w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; padding: 0 30px;">
+                    <h6 class="text-dark m-0"><i class="fa fa-bars mr-2"></i>Categories</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a>
+                <!--Categories content-->
+                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
+                    <div class="navbar-nav w-100">
+                        <!--Clothes section-->
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Clothes <i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="shop.html" class="dropdown-item">Men's Fashion</a>
+                                <a href="shop.html" class="dropdown-item">Women's Fashion</a>
+                                <a href="shop.html" class="dropdown-item">Boys' Fashion</a>
+                                <a href="shop.html" class="dropdown-item">Girls' Fashion</a>
+                                <a href="shop.html" class="dropdown-item">Baby' Dresses</a>
+                            </div>
+                        </div>
+
+                        <!--Electronic section-->
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Electronic <i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="shop.html" class="dropdown-item">Accessories & Supplies</a>
+                                <a href="shop.html" class="dropdown-item">Camera & Photo</a>
+                                <a href="shop.html" class="dropdown-item">Car & Vehicle Electronics</a>
+                                <a href="shop.html" class="dropdown-item">Cell Phones & Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Computers & Accessories</a>
+                                <a href="shop.html" class="dropdown-item">GPS & Navigation</a>
+                                <a href="shop.html" class="dropdown-item">Headphones</a>
+                                <a href="shop.html" class="dropdown-item">Home Audio</a>
+                                <a href="shop.html" class="dropdown-item">Office Electronics</a>
+                                <a href="shop.html" class="dropdown-item">Portable Audio & Video</a>
+                                <a href="shop.html" class="dropdown-item">Security & Surveillance</a>
+                                <a href="shop.html" class="dropdown-item">Television & Video</a>
+                                <a href="shop.html" class="dropdown-item">Video Game Consoles & Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Video Projectors</a>
+                                <a href="shop.html" class="dropdown-item">Wearable Technology</a>
+                                <a href="shop.html" class="dropdown-item">eBook Readers & Accessories</a>
+                            </div>
+                        </div>
+
+                        <!--Computers section-->
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Computers <i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="shop.html" class="dropdown-item">Computer Accessories & Peripherals</a>
+                                <a href="shop.html" class="dropdown-item">Computer Components</a>
+                                <a href="shop.html" class="dropdown-item">Computers & Tablets</a>
+                                <a href="shop.html" class="dropdown-item">Data Storage</a>
+                                <a href="shop.html" class="dropdown-item">External Components</a>
+                                <a href="shop.html" class="dropdown-item">Laptop Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Monitors</a>
+                                <a href="shop.html" class="dropdown-item">Networking Products</a>
+                                <a href="shop.html" class="dropdown-item">Power Strips & Surge Protectors</a>
+                                <a href="shop.html" class="dropdown-item">Printers</a>
+                                <a href="shop.html" class="dropdown-item">Scanners</a>
+                                <a href="shop.html" class="dropdown-item">Servers</a>
+                                <a href="shop.html" class="dropdown-item">Tablet Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Tablet Replacement Parts</a>
+                            </div>
+                        </div>
+
+                         <!--Smart Home section-->
+                         <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Smart Home <i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="shop.html" class="dropdown-item">Smart Home Lighting</a>
+                                <a href="shop.html" class="dropdown-item">Smart Locks and Entry</a>
+                                <a href="shop.html" class="dropdown-item">Security Cameras and Systems</a>
+                                <a href="shop.html" class="dropdown-item">Plugs and Outlets</a>
+                                <a href="shop.html" class="dropdown-item">New Smart Devices</a>
+                                <a href="shop.html" class="dropdown-item">Heating and Cooling</a>
+                                <a href="shop.html" class="dropdown-item">Detectors and Sensors</a>
+                                <a href="shop.html" class="dropdown-item">Home Entertainment</a>
+                                <a href="shop.html" class="dropdown-item">Pet</a>
+                                <a href="shop.html" class="dropdown-item">Voice Assistants and Hubs</a>
+                                <a href="shop.html" class="dropdown-item">Kitchen</a>
+                                <a href="shop.html" class="dropdown-item">Vacuums and Mops</a>
+                                <a href="shop.html" class="dropdown-item">Lawn and Garden</a>
+                                <a href="shop.html" class="dropdown-item">WIFI and Networking</a>
+                            </div>
+                        </div>
+
+                        <!--Arts & Crafts section-->
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Arts & Crafts <i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="shop.html" class="dropdown-item">Painting, Drawing & Art Supplies</a>
+                                <a href="shop.html" class="dropdown-item">Beading & Jewelry Making</a>
+                                <a href="shop.html" class="dropdown-item">Crafting</a>
+                                <a href="shop.html" class="dropdown-item">Fabric</a>
+                                <a href="shop.html" class="dropdown-item">Fabric Decorating</a>
+                                <a href="shop.html" class="dropdown-item">Knitting & Crochet</a>
+                                <a href="shop.html" class="dropdown-item">Needlework</a>
+                                <a href="shop.html" class="dropdown-item">Organization, Storage & Transport</a>
+                                <a href="shop.html" class="dropdown-item">Printmaking</a>
+                                <a href="shop.html" class="dropdown-item">Scrapbooking & Stamping</a>
+                                <a href="shop.html" class="dropdown-item">Sewing</a>
+                                <a href="shop.html" class="dropdown-item">Party Decorations & Supplies</a>
+                                <a href="shop.html" class="dropdown-item">Gift Wrapping Supplies</a>
+                            </div>
+                        </div>
+
+                        <!--Automotive section-->
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Automotive <i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="shop.html" class="dropdown-item">Car Care</a>
+                                <a href="shop.html" class="dropdown-item">Car Electronics & Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Exterior Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Interior Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Lights & Lighting Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Motorcycle & Powersports</a>
+                                <a href="shop.html" class="dropdown-item">Oils & Fluids</a>
+                                <a href="shop.html" class="dropdown-item">Paint & Paint Supplies</a>
+                                <a href="shop.html" class="dropdown-item">Performance Parts & Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Replacement Parts</a>
+                                <a href="shop.html" class="dropdown-item">RV Parts & Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Tires & Wheels</a>
+                                <a href="shop.html" class="dropdown-item">Tools & Equipment</a>
+                                <a href="shop.html" class="dropdown-item">Automotive Enthusiast Merchandise</a>
+                                <a href="shop.html" class="dropdown-item">Heavy Duty & Commercial Vehicle Equipment</a>
+                            </div>
+                        </div>
+
+                        <!--Beauty And Personal Care section-->
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Beauty And Personal Care<i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="shop.html" class="dropdown-item">Makeup</a>
+                                <a href="shop.html" class="dropdown-item">Skin Care</a>
+                                <a href="shop.html" class="dropdown-item">Hair Care</a>
+                                <a href="shop.html" class="dropdown-item">Fragrance</a>
+                                <a href="shop.html" class="dropdown-item">Foot, Hand & Nail Care</a>
+                                <a href="shop.html" class="dropdown-item">Tools & Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Shave & Hair Removal</a>
+                                <a href="shop.html" class="dropdown-item">Personal Care</a>
+                                <a href="shop.html" class="dropdown-item">Oral Care</a>
+                            </div>
+                        </div>
+
+                        <!--Baby section-->
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Baby <i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="shop.html" class="dropdown-item">Activity & Entertainment</a>
+                                <a href="shop.html" class="dropdown-item">Apparel & Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Baby & Toddler Toys</a>
+                                <a href="shop.html" class="dropdown-item">Baby Care</a>
+                                <a href="shop.html" class="dropdown-item">Baby Stationery</a>
+                                <a href="shop.html" class="dropdown-item">Diapering</a>
+                                <a href="shop.html" class="dropdown-item">Feeding</a>
+                                <a href="shop.html" class="dropdown-item">Gifts</a>
+                                <a href="shop.html" class="dropdown-item">Nursery</a>
+                                <a href="shop.html" class="dropdown-item">Potty Training</a>
+                                <a href="shop.html" class="dropdown-item">Pregnancy & Maternity</a>
+                                <a href="shop.html" class="dropdown-item">Safety</a>
+                                <a href="shop.html" class="dropdown-item">Strollers & Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Travel Gear</a>
+                            </div>
+                        </div>
+
+                        <!--Health And Household section-->
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Health And Household <i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="shop.html" class="dropdown-item">Baby & Child Care</a>
+                                <a href="shop.html" class="dropdown-item">Health Care</a>
+                                <a href="shop.html" class="dropdown-item">Household Supplies</a>
+                                <a href="shop.html" class="dropdown-item">Medical Supplies & Equipment</a>
+                                <a href="shop.html" class="dropdown-item">Oral Care</a>
+                                <a href="shop.html" class="dropdown-item">Personal Care</a>
+                                <a href="shop.html" class="dropdown-item">Sexual Wellness</a>
+                                <a href="shop.html" class="dropdown-item">Sports Nutrition</a>
+                                <a href="shop.html" class="dropdown-item">Stationery & Gift Wrapping Supplies</a>
+                                <a href="shop.html" class="dropdown-item">Vision Care</a>
+                                <a href="shop.html" class="dropdown-item">Vitamins & Dietary Supplements</a>
+                                <a href="shop.html" class="dropdown-item">Wellness & Relaxation</a>
+                            </div>
+                        </div>
+
+                        <!--Home And Kitchen section-->
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Home And Kitchen<i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="shop.html" class="dropdown-item">Kids' Home Store</a>
+                                <a href="shop.html" class="dropdown-item">Kitchen & Dining</a>
+                                <a href="shop.html" class="dropdown-item">Bedding</a>
+                                <a href="shop.html" class="dropdown-item">Bath</a>
+                                <a href="shop.html" class="dropdown-item">Furniture</a>
+                                <a href="shop.html" class="dropdown-item">Home Décor</a>
+                                <a href="shop.html" class="dropdown-item">Wall Art</a>
+                                <a href="shop.html" class="dropdown-item">Lighting & Ceiling Fans</a>
+                                <a href="shop.html" class="dropdown-item">Seasonal Décor</a>
+                                <a href="shop.html" class="dropdown-item">Event & Party Supplies</a>
+                                <a href="shop.html" class="dropdown-item">Heating, Cooling & Air Quality</a>
+                                <a href="shop.html" class="dropdown-item">Irons & Steamers</a>
+                                <a href="shop.html" class="dropdown-item">Vacuums & Floor Care</a>
+                                <a href="shop.html" class="dropdown-item">Storage & Organization</a>
+                                <a href="shop.html" class="dropdown-item">Cleaning Supplies</a>
+                            </div>
+                        </div>
+
+                        <!--Video Games section-->
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Video Games<i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="shop.html" class="dropdown-item">Video Games</a>
+                                <a href="shop.html" class="dropdown-item">PlayStation 5</a>
+                                <a href="shop.html" class="dropdown-item">PlayStation 4</a>
+                                <a href="shop.html" class="dropdown-item">PlayStation 3</a>
+                                <a href="shop.html" class="dropdown-item">Xbox One</a>
+                                <a href="shop.html" class="dropdown-item">Xbox 360</a>
+                                <a href="shop.html" class="dropdown-item">Nintendo Switch</a>
+                                <a href="shop.html" class="dropdown-item">Wii U</a>
+                                <a href="shop.html" class="dropdown-item">Wii</a>
+                                <a href="shop.html" class="dropdown-item">PC</a>
+                                <a href="shop.html" class="dropdown-item">Mac</a>
+                                <a href="shop.html" class="dropdown-item">Nintendo 3DS & 2DS</a>
+                                <a href="shop.html" class="dropdown-item">Nintendo DS</a>
+                                <a href="shop.html" class="dropdown-item">PlayStation Vita</a>
+                                <a href="shop.html" class="dropdown-item">Sony PSP</a>
+                                <a href="shop.html" class="dropdown-item">Retro Gaming & Microconsoles</a>
+                                <a href="shop.html" class="dropdown-item">Accessories</a>
+                                <a href="shop.html" class="dropdown-item">Digital Games</a>
+                                <a href="shop.html" class="dropdown-item">Kids & Family</a>
+                            </div>
+                        </div>
+
+                        <!--Sports And Outdoors section-->
+                        <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sports And Outdoors<i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="shop.html" class="dropdown-item">Sports and Outdoors</a>
+                                <a href="shop.html" class="dropdown-item">Outdoor Recreation</a>
+                                <a href="shop.html" class="dropdown-item">Sports & Fitness</a>
+                            </div>
+                        </div>
+
+                        <a href="shop.html" class="nav-item nav-link">View all</a>
+                        
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
+                    <!--This is the logo part for devices with smaller screen-->
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <span class="h1 text-uppercase text-dark bg-light px-2">UNI</span>
+                        <span class="h1 text-uppercase text-light bg-primary px-2 ml-n1">Store</span>
+                    </a>
+                    <!--Navbar icon for devices with smaller srceen-->
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Navbar content-->
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="shop.html" class="nav-item nav-link">Shop</a>
+                            <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down mt-1"></i></a>
+                                <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
+                                    <a href="cart.html" class="dropdown-item">Shopping Cart</a>
+                                    <a href="checkout.html" class="dropdown-item">Checkout</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+
+                        <!--icon for devices with smaller screen-->
+                        <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
+                            <!--Wishlist-->
+                            <a href="" class="btn px-0">
+                                <i class="fas fa-heart text-primary"></i>
+                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                            </a>
+                            <!--Cart-->
+                            <a href="" class="btn px-0 ml-3">
+                                <i class="fas fa-shopping-cart text-primary"></i>
+                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4 bg-white m-auto rounded-top wrapper">
+            <h2 class="text-center pt-3">Signup Now</h2>
+            <p class="text-center text-muted lead mb-3">Shopping is easier than never before</p>
+            <!--form start--> 
+            <form action="#">
+                <div class="avatar-wrapper">
+                    <img class="profile-pic" src="" />
+                    <div class="upload-button">
+                        <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                    </div>
+                    <input class="file-upload" type="file" accept="image/*"/>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Username">
+                    <p class="text-left">Contains only letters (lower and upper case) and digits, has a length from 8 to 15 characters</p>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">
+                        <i class="fa fa-phone"></i>
+                    </span>
+                    <input type="number" class="form-control" placeholder="Phone Numbers">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fa fa-lock"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Password">
+                    <p class="text-left">Contains at least one upper case letter, at least one lower case letter, at least one digit, at least one special letter in the set !@#$%^&*, has a length from 8 to 20 characters.</p>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">
+                        <i class="fa fa-lock"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Password Confirmation">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">
+                        <i class="<i class="fa-solid fa-motorcycle"></i>"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Bike Registration">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">
+                        <i class="<i class="fa-solid fa-motorcycle"></i>"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Assigned Distribution Hub">
+                </div>
+                <div class="d-grid">
+                    <button type="button" class="btn">Signup Now</button>
+                    <p class="text-center text-muted">By signing up, I accept that I have read and agreed to Universal's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a> which outlines how Universal collects, uses, and discloses my personal data, as well as my legal rights.</p>
+                    <p class="text-center">
+                        Already have an account? <a href="#">Login Now</a>
+                    </p>
+                </div>
+            </form>
+            <!--form close--> 
+        </div>
+    </div>
+    <script src="js_shipper/script_shipper.js"></script>
+    <script src="js_shipper/bootstrap.bundle.min.js"></script>
+</body>
+</html>
